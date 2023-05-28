@@ -1,0 +1,63 @@
+define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qualtrics/qstiat6.js'], function(APIConstructor, stiatExtension){
+	
+	var API = new APIConstructor();
+		  return stiatExtension({
+		  category : { 
+		    name : 'Beide', //Will appear in the data.
+		    title : {
+		      media : {word : 'Beide'}, //Name of the category presented in the task.
+		      css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+		      height : 7 //Used to position the "Or" in the combined block.
+		    }, 
+		    media : [ //Stimuli content as PIP's media objects
+    		    	{word : 'Mitarbeite'}, 
+    			{word : 'Bürger'}, 
+    			{word : 'Fremder'}, 
+    			{word : 'Gast'}, 
+    			{word : 'Freund'}, 
+    			{word : 'Bekannter'}
+		    ], 
+		    //Stimulus css (style)
+		    css : {color:'#31b404','font-size':'3em'}
+		  },	
+
+  		attribute1 : 
+			{
+			name : 'Mann', //Attribute label
+			title : {
+				media : {word : 'Mann'}, //Name of the category presented in the task.
+				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+				height : 7 //Used to position the "Or" in the combined block.
+			}, 
+			media : [ //Stimuli
+				{word: 'Ehemann'},
+				{word: 'Herr'},
+				{word: 'Onkel'},
+				{word: 'Vater'},
+				{word: 'Bruder'},
+				{word: 'Sohn'}
+			], 
+			//Can change color and size of the targets here.
+			css : {color:'#31b404','font-size':'3em'}
+			},
+		attribute2 : 
+			{
+			name : 'Frau', //Attribute label
+			title : {
+				media : {word : 'Frau'}, //Name of the category presented in the task.
+				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+				height : 7 //Used to position the "Or" in the combined block.
+			}, 
+			media : [ //Stimuli
+				{word: 'Ehefrau'},
+				{word: 'Dame'},
+				{word: 'Tante'},
+				{word: 'Mutter'},
+				{word: 'Schwester'},
+				{word: 'Tochter'}
+			], 
+			//Can change color and size of the targets here.
+			css : {color:'#31b404','font-size':'3em'}
+  }}
+  );
+  });
